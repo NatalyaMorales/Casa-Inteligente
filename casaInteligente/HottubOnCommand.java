@@ -12,4 +12,8 @@ public class HottubOnCommand implements Command{
         hottube.heat();
         hottube.bubblesOn();
     }
+
+    public void undo(){
+        hottube.off();
+    }
 }

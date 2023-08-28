@@ -1,6 +1,6 @@
 package casaInteligente;
 
-public interface NoCommand {
-    public void execute();
+public class NoCommand implements Command {
+	public void execute() { }
 }
  

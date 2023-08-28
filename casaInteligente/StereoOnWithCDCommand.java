@@ -1,15 +1,19 @@
 package casaInteligente;
 
 public class StereoOnWithCDCommand implements Command{
-    Stereo stero;
+    Stereo stereo;
 
     public StereoOnWithCDCommand (Stereo stereo){
-        this.stero = stereo;
+        this.stereo = stereo;
     }
 
     public void execute(){
-        stero.on();
-        stero.setCD();
-        stero.setVolume(11);
+        stereo.on();
+        stereo.setCD();
+        stereo.setVolume(11);
+    }
+
+    public void undo(){
+        stereo.off();
     }
 }
